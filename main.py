@@ -53,7 +53,7 @@ if not res:
     # Insert the latest contest info. into DB
     insert_info = (contest_id, contest_name, rank, rating_update_time_seconds, old_rating, new_rating)
     sql_insert_latest_contest_info = "INSERT INTO contests VALUES(%s, %s, %s, %s, %s, %s)"
-    # insert_DB(con, sql_insert_latest_contest_info, insert_info)
+    insert_DB(con, sql_insert_latest_contest_info, insert_info)
 
     # send the Notification to LINE
     message = contest_name + "\n" + "Rate:" + str(old_rating) + "->" + str(new_rating)

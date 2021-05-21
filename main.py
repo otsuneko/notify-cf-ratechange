@@ -35,7 +35,7 @@ user_name = os.environ['CODEFORCES_USER_NAME']
 response = requests.get("https://codeforces.com/api/user.rating?handle=" + user_name)
 json_data = response.json()
 
-latest_contest_info = json_data["result"][len(json_data["result"])-1]
+latest_contest_info = json_data["result"][-1]
 contest_id = latest_contest_info["contestId"]
 contest_name = latest_contest_info["contestName"]
 rank = latest_contest_info["rank"]

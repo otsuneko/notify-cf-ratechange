@@ -57,4 +57,11 @@ if not res:
 
     # send the Notification to LINE
     message = contest_name + "\n" + "Rate:" + str(old_rating) + "->" + str(new_rating)
+    if old_rating < new_rating:
+        message += ":)"
+    elif old_rating == new_rating:
+        message += ":|"
+    else:
+        message += ":("
+    
     line_notify(message)

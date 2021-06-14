@@ -56,7 +56,7 @@ if not res:
     insert_DB(con, sql_insert_latest_contest_info, insert_info)
 
     # send the Notification to LINE
-    message = contest_name + "\n" + "Rate:" + str(old_rating) + "->" + str(new_rating)
+    message = contest_name + "\n" + "Rank" + str(rank) + "\n" + "Rating:" + str(old_rating) + "->" + str(new_rating)
     if old_rating < new_rating:
         message += ":)"
     elif old_rating == new_rating:

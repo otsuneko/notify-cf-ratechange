@@ -63,5 +63,6 @@ if not res:
         message += "(±0) :|"
     else:
         message += "(" + str(new_rating-old_rating) +") :("
-    
+    message += "\n" + "https://codeforces.com/contests/with/" + user_name
+
     line_notify(message)

@@ -4,6 +4,8 @@ This app helps you notice the update of codeforces rating, by sending a notifica
 
 This app is supposed to be hosted on Heroku server and executed at regular intervals (e.g. every 10 minutes).
 
+Update on Nov./21/2023: Heroku PostgreSQL is no longer available for free use. As an alternative migration option, services like https://render.com/ seem to be available.
+
 ## Prerequisites
 
 - Github account
